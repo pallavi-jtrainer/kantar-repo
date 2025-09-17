@@ -1,0 +1,5 @@
+package com.edforce.sampleproject.exception;
+
+public class ErrorDetails {
+
+}

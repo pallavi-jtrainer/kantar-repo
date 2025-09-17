@@ -1,0 +1,5 @@
+package com.edforce.sampleproject.service;
+
+public class StudentService {
+
+}

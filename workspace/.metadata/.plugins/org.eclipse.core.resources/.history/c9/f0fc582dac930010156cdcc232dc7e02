@@ -1,0 +1,5 @@
+package com.edforce.sampleproject.controller;
+
+public class StudentController {
+
+}

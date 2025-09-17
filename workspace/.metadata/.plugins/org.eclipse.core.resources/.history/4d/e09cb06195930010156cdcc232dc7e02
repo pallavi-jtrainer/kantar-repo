@@ -1,0 +1,11 @@
+package com.edforce.sampleproject.entity;
+
+public class Student {
+	
+	private long studentId; // student_id
+	private String firstName;
+	private String lastName;
+	private String email;
+	private long courseId;
+	
+}

@@ -1,0 +1,46 @@
+package com.edforce.sampleproject.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.edforce.sampleproject.entity.Student;
+import com.edforce.sampleproject.repository.StudentRepository;
+
+@Service
+public class StudentService {
+	
+	private final StudentRepository repo;
+	
+	public StudentService(StudentRepository repo) {
+		this.repo = repo;
+	}
+	
+	public Student createStudent(Student s) {
+		return repo.save(s);
+	}
+	
+	public List<Student> listAllStudents() {
+		return repo.findAll();
+	}
+	
+	public String updateCourse(Long id, Long course) {
+		String str = "Unable to update course";
+		
+		int res = repo.updateCourse(id, course);
+		
+	}
+	
+	public Optional<Student> getStudentData(Long id) {
+//		Optional<Student> s = Optional.of(repo.findByStudentId(id).get());
+////				.orElseThrow(() -> new RuntimeException("Student Not Found")
+////				);
+//		
+//		return s;
+		
+		return Optional.of(repo.findByStudentId(id)
+				.orElseThrow(() -> new RuntimeException("Student not found")));
+		
+	}
+}

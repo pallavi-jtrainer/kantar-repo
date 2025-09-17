@@ -1,0 +1,5 @@
+package com.edforce.sampleproject.repository;
+
+public interface CourseRepository {
+
+}
