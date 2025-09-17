@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+		
+	<bean id="demo" 
+		class="com.tavant.spring.core.SpringXMLConfigurationDemo.entity.HelloWorld"
+		init-method="init" destroy-method="destroy"
+		>
+		<property name="message" value="Welcome to Spring Framework"></property>
+	</bean>
+	
+	<!-- <bean id="course" class="com.tavant.spring.core.SpringXMLConfigurationDemo.entity.Course">
+		<property name="courseId" value="101"></property>
+		<property name="courseName" value="Spring Framework"></property>
+	</bean>
+	
+	<bean id="student" class="com.tavant.spring.core.SpringXMLConfigurationDemo.entity.Student">
+		<property name="studentId" value="1"></property>
+		<property name="studentName" value="Student1"></property>
+		<property name="course" ref="course"></property>
+	</bean> -->
+</beans>
