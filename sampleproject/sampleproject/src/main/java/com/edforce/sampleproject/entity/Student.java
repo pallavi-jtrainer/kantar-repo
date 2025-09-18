@@ -2,9 +2,11 @@ package com.edforce.sampleproject.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
@@ -33,6 +35,7 @@ public class Student {
 	@Column(name="email", length=150, nullable = false, unique = true)
 	private String email;
 	
+//	@ManyToOne(targetEntity = Course.class, fetch = FetchType.LAZY)
 	@Column(name="courseid", nullable=false)
 	private long courseId;
 	
