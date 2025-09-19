@@ -1,0 +1,39 @@
+minibackapplication/
+├── pom.xml
+└── src
+    └── main
+        ├── java
+        │   └── com.edforce.minibankapplication
+        │       ├── MinibankapplicationApplication.java
+        │       ├── controller
+        │       │   ├── AccountController.java
+        │       │   ├── CustomerController.java
+        │       │   └── TransactionController.java
+        │       ├── dto
+        │       │   ├── AccountDto.java
+        │       │   ├── CustomerDto.java
+        │       │   ├── CreateAccountRequest.java
+        │       │   ├── CreateCustomerRequest.java
+        │       │   ├── TransactionDto.java
+        │       │   └── TransferRequest.java
+        │       ├── entity
+        │       │   ├── Account.java
+        │       │   ├── Customer.java
+        │       │   └── Transaction.java
+        │       ├── exception
+        │       │   ├── ApiError.java
+        │       │   ├── GlobalExceptionHandler.java
+        │       │   ├── InsufficientFundsException.java
+        │       │   └── ResourceNotFoundException.java
+        │       ├── mapper
+        │       │   └── DtoMapper.java
+        │       ├── repository
+        │       │   ├── AccountRepository.java
+        │       │   ├── CustomerRepository.java
+        │       │   └── TransactionRepository.java
+        │       └── service
+        │           ├── AccountService.java
+        │           ├── CustomerService.java
+        │           └── TransactionService.java
+        └── resources
+            ├── application.properties
