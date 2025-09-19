@@ -2,6 +2,10 @@ package com.kantar.springbootmongodemo.service;
 
 import java.util.List;
 
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 //import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,9 +20,13 @@ public class ProductService {
 
 	private final ProductRepository repo;
 	
+	private final MongoTemplate mongoTemplate;
+	
+	
 //	@Autowired
-	public ProductService(ProductRepository repo) {
+	public ProductService(ProductRepository repo, MongoTemplate mongoTemplate) {
 		this.repo = repo;
+		this.mongoTemplate = mongoTemplate;
 	}
 	
 	public Product addNewProduct(Product p) {
@@ -33,14 +41,30 @@ public class ProductService {
 		return repo.findByProductName(name);
 	}
 	
+//	public String updateProductPrice(String name, double price) {
+//		Query query = new Query(Criteria.where("productName")
+//				.is(name));
+//		Update update = new Update().set("price", price);
+//		mongoTemplate.updateFirst(query, update, Product.class);
+//		return "Tried update";
+//	}
+	
 	public String updateProductPrice(String name, double price) {
 		String str = "Unable to update";
 		
+//		Product p = repo.findByProductName(name);
+//		
+//		p.setPrice(price);
+//		p = repo.save(p);
 		int res = repo.updatePriceByProductName(name, price);
 		
 		if(res > 0) {
 			str= "Product updated";
 		}
+		
+//		if(p != null) {
+//			str = "Product updated";
+//		}
 		
 		return str;
 	}

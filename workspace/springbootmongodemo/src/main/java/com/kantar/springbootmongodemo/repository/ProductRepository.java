@@ -20,11 +20,11 @@ public interface ProductRepository extends MongoRepository<Product, String>{
 	@Query("{'productName': ?0, 'price': {'$lt': ?1}}")
 	Product findByProductNameAndPriceLsssThan(String name, double price);
 	
-//	@Query("{'productName': ?0}")
-//	@Update("{'$set': {'price': ?1}}")
+	@Query("{'productName': ?0}")
+	@Update("{'$set': {'price': ?1}}")
 //	@Query(value="{'productName': ?0, '$set': {"
 //			+ "'price': $1}}")
 //	@Update("{'productName': ?0},{'$set':{'price': ?1}}")
-	@Query(value = "{ 'productName' : ?0 }, { '$set' : { 'price' : ?1 } }")
+//	@Query(value = "{ 'productName' : ?0 }", update = "{ '$set' : { 'price' : ?1 } }")
 	int updatePriceByProductName(String name, double price);
 }
