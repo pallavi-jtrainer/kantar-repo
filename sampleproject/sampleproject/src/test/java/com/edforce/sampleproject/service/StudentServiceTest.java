@@ -40,14 +40,7 @@ public class StudentServiceTest {
 	
 	@Test
 	public void testCreateStudent() {
-		//arrange
-		Course course = new Course();
-		course.setCourseId(10L);
-		course.setCourseName("Testing");
-		course.setDescription("Testing course");
-		course.setDuration("3 days");
-		course.setStartDate(LocalDate.now());
-		
+		//arrange		
 		Student student = new Student();
 		student.setStudentId(1L);
 		student.setFirstName("first");

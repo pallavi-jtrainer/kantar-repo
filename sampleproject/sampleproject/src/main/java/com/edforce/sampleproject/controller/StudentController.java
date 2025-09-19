@@ -66,7 +66,8 @@ public class StudentController {
 	@ResponseStatus(code = HttpStatus.CREATED)
 	@PostMapping
 	public ResponseEntity<Student> createStudent(@Valid @RequestBody Student s) {
-		return ResponseEntity.ok(service.createStudent(s));
+		Student saved = service.createStudent(s);
+		return ResponseEntity.status(HttpStatus.CREATED).body(saved);
 	}
 	
 	@Operation(
