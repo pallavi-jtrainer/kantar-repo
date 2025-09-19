@@ -10440,3 +10440,40 @@ java.io.EOFException: null
 2025-09-18T16:12:45.692+05:30  INFO 21040 --- [sampleproject] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-09-18T16:12:45.692+05:30  INFO 21040 --- [sampleproject] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
 2025-09-18T16:12:45.696+05:30  INFO 21040 --- [sampleproject] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-09-18T16:12:45.758+05:30  INFO 21040 --- [sampleproject] [restartedMain] c.e.s.SampleprojectApplication           : Starting SampleprojectApplication using Java 21.0.6 with PID 21040 (E:\trainings\edforce\kantar\sampleproject\sampleproject\target\classes started by Pallavi in E:\trainings\edforce\kantar\sampleproject\sampleproject)
+2025-09-18T16:12:45.758+05:30  INFO 21040 --- [sampleproject] [restartedMain] c.e.s.SampleprojectApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-09-18T16:12:45.922+05:30  INFO 21040 --- [sampleproject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-18T16:12:45.929+05:30  INFO 21040 --- [sampleproject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2025-09-18T16:12:45.978+05:30  INFO 21040 --- [sampleproject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-09-18T16:12:45.979+05:30  INFO 21040 --- [sampleproject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-18T16:12:45.979+05:30  INFO 21040 --- [sampleproject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-18T16:12:45.991+05:30  INFO 21040 --- [sampleproject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-18T16:12:45.992+05:30  INFO 21040 --- [sampleproject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 233 ms
+2025-09-18T16:12:46.026+05:30  INFO 21040 --- [sampleproject] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-18T16:12:46.027+05:30  INFO 21040 --- [sampleproject] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-18T16:12:46.031+05:30  INFO 21040 --- [sampleproject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-18T16:12:46.031+05:30  INFO 21040 --- [sampleproject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-09-18T16:12:46.042+05:30  INFO 21040 --- [sampleproject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fe5d979
+2025-09-18T16:12:46.043+05:30  INFO 21040 --- [sampleproject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-09-18T16:12:46.043+05:30  INFO 21040 --- [sampleproject] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-18T16:12:46.111+05:30  INFO 21040 --- [sampleproject] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-18T16:12:46.118+05:30  INFO 21040 --- [sampleproject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-18T16:12:46.189+05:30  WARN 21040 --- [sampleproject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-18T16:12:46.307+05:30  INFO 21040 --- [sampleproject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-18T16:12:46.309+05:30  INFO 21040 --- [sampleproject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/monitor'
+2025-09-18T16:12:46.329+05:30  INFO 21040 --- [sampleproject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-09-18T16:12:46.333+05:30  INFO 21040 --- [sampleproject] [restartedMain] c.e.s.SampleprojectApplication           : Started SampleprojectApplication in 0.586 seconds (process running for 477.562)
+2025-09-18T16:12:46.335+05:30  INFO 21040 --- [sampleproject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-18T16:24:30.554+05:30  INFO 21040 --- [sampleproject] [RMI TCP Connection(26)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-09-18T16:24:30.555+05:30  INFO 21040 --- [sampleproject] [RMI TCP Connection(26)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-18T16:24:30.560+05:30  INFO 21040 --- [sampleproject] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-18T16:24:30.562+05:30  INFO 21040 --- [sampleproject] [RMI TCP Connection(26)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-18T16:24:30.563+05:30  INFO 21040 --- [sampleproject] [RMI TCP Connection(26)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-09-18T16:24:30.566+05:30  INFO 21040 --- [sampleproject] [RMI TCP Connection(26)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
