@@ -1,0 +1,170 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('../images/bilderboken.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 30px;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+}
+
+.logo img {
+    height: 40px;
+    width: 2em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff9800;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.hero {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #ff9800;
+    color: white;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 15px;
+    }
+
+    #menu-toggle:checked+.menu-icon+.nav-links {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}

@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -38,8 +41,21 @@ public class StudentServiceTest {
 	@InjectMocks
 	private StudentService service;
 	
+//	@BeforeEach
+//	public void setUp() {
+//		System.out.println("In set up");
+//	}
+//	
+//	@AfterEach
+//	public void tearDown() {
+//		System.out.println("Done with test method");
+//	}
+//	
 	@Test
+	@DisplayName("createStudent test method")
 	public void testCreateStudent() {
+		
+//		System.out.println("In create student test method");
 		//arrange		
 		Student student = new Student();
 		student.setStudentId(1L);

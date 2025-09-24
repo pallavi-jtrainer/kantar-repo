@@ -1444,3 +1444,109 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.mapstruct
 2025-09-19 15:44:24,784 [Worker-150: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-09-19 15:44:24,784 [Worker-150: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-09-19 15:44:24,785 [Worker-150: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 15:59:29,082 [Worker-156: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 15:59:29,084 [Worker-156: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 15:59:29,085 [Worker-156: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:02:56,313 [Worker-150: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:02:56,313 [Worker-150: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:02:56,315 [Worker-150: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:03:16,799 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:03:16,799 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:03:16,800 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:03:21,699 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:03:21,699 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:03:21,700 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:06:50,515 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:06:50,516 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:06:50,518 [Worker-158: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:07:58,295 [main] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating StudentControllerTest from maven configuration
+2025-09-19 16:08:56,340 [Worker-150: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:08:56,340 [Worker-150: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:08:56,342 [Worker-150: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:10:35,222 [Worker-159: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:10:35,223 [Worker-159: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:10:35,224 [Worker-159: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:15:20,332 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-19 16:15:20,338 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:15:20,340 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:15:46,624 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:15:46,624 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:15:46,625 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:16:26,546 [Worker-161: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:16:26,546 [Worker-161: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:16:26,547 [Worker-161: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:17:16,091 [Worker-157: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:17:16,092 [Worker-157: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:17:16,094 [Worker-157: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:17:36,255 [Worker-161: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:17:36,256 [Worker-161: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:17:36,257 [Worker-161: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:18:58,651 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:18:58,652 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:18:58,653 [Worker-166: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:19:10,035 [Worker-168: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:19:10,036 [Worker-168: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:19:10,037 [Worker-168: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:19:23,011 [Worker-157: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:19:23,011 [Worker-157: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:19:23,013 [Worker-157: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:21:03,846 [Worker-167: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:21:03,847 [Worker-167: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:21:03,849 [Worker-167: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:29:38,267 [Worker-157: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:29:38,267 [Worker-157: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:29:38,268 [Worker-157: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:33:28,920 [Worker-172: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:33:28,922 [Worker-172: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:33:28,922 [Worker-172: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:33:54,264 [Worker-169: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:33:54,264 [Worker-169: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:33:54,267 [Worker-169: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:35:18,510 [Worker-171: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:35:18,510 [Worker-171: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:35:18,512 [Worker-171: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:41:17,443 [Worker-177: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:41:17,443 [Worker-177: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:41:17,444 [Worker-177: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:42:59,594 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:42:59,596 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:42:59,597 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:44:37,271 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:44:37,271 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:44:37,272 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:45:43,099 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:45:43,099 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:45:43,100 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:46:37,375 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:46:37,375 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:46:37,376 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-19 16:47:31,776 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:47:31,776 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-19 16:47:31,778 [Worker-179: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\sampleproject\sampleproject\src\test\resources
+2025-09-24 09:31:22,289 [Worker-187: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 09:31:22,322 [Worker-187: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 09:31:22,325 [Worker-187: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\workspace\minibankapplication\src\test\resources
+2025-09-24 09:35:22,459 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 09:35:22,468 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 09:35:22,469 [Worker-192: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\workspace\minibankapplication\src\test\resources
+2025-09-24 09:37:21,730 [Worker-193: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 09:37:21,740 [Worker-193: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 09:37:21,742 [Worker-193: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\workspace\minibankapplication\src\test\resources
+2025-09-24 09:37:54,604 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 09:37:54,613 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 09:37:54,614 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\workspace\minibankapplication\src\test\resources
+2025-09-24 09:38:07,912 [Worker-194: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 09:38:07,921 [Worker-194: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 09:38:07,924 [Worker-194: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\workspace\minibankapplication\src\test\resources
+2025-09-24 09:39:08,021 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 09:39:08,026 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 09:39:08,028 [Worker-196: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\workspace\minibankapplication\src\test\resources
+2025-09-24 09:40:03,895 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 09:40:03,901 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 09:40:03,903 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\workspace\minibankapplication\src\test\resources
+2025-09-24 09:40:08,210 [Worker-193: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 09:40:08,226 [Worker-193: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 09:40:08,228 [Worker-193: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\workspace\minibankapplication\src\test\resources
+2025-09-24 09:40:14,458 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-24 09:40:14,465 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-24 09:40:14,466 [Worker-195: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\trainings\edforce\kantar\workspace\minibankapplication\src\test\resources
