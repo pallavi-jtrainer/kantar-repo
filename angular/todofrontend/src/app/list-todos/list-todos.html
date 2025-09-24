@@ -1,0 +1,18 @@
+<div>
+  <table>
+    <tr>
+      <th>User Id</th>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Completed</th>
+      <th>Details</th>
+    </tr>
+    <tr *ngFor="let todo of todos">
+      <td>{{todo.userId}}</td>
+      <td>{{todo.id}}</td>
+      <td>{{todo.title}}</td>
+      <td>{{todo.completed}}</td>
+      <td><button (click)="navigateToViewTodo(todo.id)">Details</button></td>
+    </tr>
+  </table>
+</div>
