@@ -25,7 +25,7 @@ public class Customer {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long customerId;
+	private Long id;
 	
 	@Column(length=50, nullable = false)
 	private String firstName;
@@ -42,5 +42,10 @@ public class Customer {
 	@OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, 
 			orphanRemoval = true, fetch = FetchType.LAZY)
 	private List<Account> accounts;
+	
+    public void addAccount(Account account) {
+        accounts.add(account);
+        account.setCustomer(this);
+    }
 	
 }

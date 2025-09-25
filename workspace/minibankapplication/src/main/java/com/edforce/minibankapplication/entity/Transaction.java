@@ -23,7 +23,6 @@ import lombok.ToString;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 @ToString
 public class Transaction {
 
@@ -43,4 +42,14 @@ public class Transaction {
 
     @Column(nullable = false, updatable = false)
     private LocalDateTime timestamp = LocalDateTime.now();
+    
+    private String description;
+    
+    public Transaction(Account account, BigDecimal amount, String type, String description) {
+        this.account = account;
+        this.amount = amount;
+        this.type = type;
+        this.description = description;
+        this.timestamp = LocalDateTime.now();
+    }
 }

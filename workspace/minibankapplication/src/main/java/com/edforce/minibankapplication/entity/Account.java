@@ -19,7 +19,7 @@ import lombok.ToString;
 
 @Entity
 @Table(name = "accounts")
-@Getter @AllArgsConstructor
+@Getter 
 @Setter @NoArgsConstructor
 @ToString
 public class Account {
@@ -40,4 +40,10 @@ public class Account {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "customer_id")
 	private Customer customer;
+	
+	 public Account(String accountNumber, String accountType, BigDecimal balance) {
+        this.accountNumber = accountNumber;
+        this.accountType = accountType;
+        this.balance = balance;
+    }
 }

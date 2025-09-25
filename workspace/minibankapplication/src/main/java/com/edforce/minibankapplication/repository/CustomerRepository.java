@@ -11,5 +11,4 @@ import com.edforce.minibankapplication.entity.Customer;
 public interface CustomerRepository extends JpaRepository<Customer, Long>{
 	Optional<Customer> findByEmail(String email);
 	boolean existsByEmail(String email);
-	Optional<Customer> findByCustomerId(Long id);
 }
