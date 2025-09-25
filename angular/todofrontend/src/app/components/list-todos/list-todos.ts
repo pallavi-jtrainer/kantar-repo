@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Todo } from '../models/Todo';
-import { TodoService } from '../services/todoservice';
+import { Todo } from '../../models/Todo';
+import { TodoService } from '../../services/todoservice';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
@@ -34,6 +34,10 @@ export class ListTodos {
   }
 
   navigateToViewTodo(id: number) {
-    this.router.navigate([`/${id}`]);
+    this.router.navigate([`view/${id}`]);
+  }
+
+  goToAddTodo() {
+    this.router.navigate(['/add']);
   }
 }

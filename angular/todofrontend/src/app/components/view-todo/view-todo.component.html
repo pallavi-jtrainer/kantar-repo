@@ -1,0 +1,40 @@
+<div class="todo-detail">
+  <h2>Todo Details</h2>
+
+  <!-- <div class="card" *ngIf="todo">
+    <h3>{{ todo.title }}</h3>
+    <p>
+      Status:
+      <span [class.completed]="todo.completed">
+        {{ todo.completed ? 'Completed' : 'Pending' }}
+      </span>
+    </p >
+
+  </div> -->
+
+  <!-- can also be written as:
+    @if(todo(); as todo) {
+      <div>...</div>
+    } else {
+      <div>...</div>
+    }
+  -->
+  @if (todo) {
+  <div class="card">
+    <h3>{{ todo.title }}</h3>
+    <p>
+      Status:
+      <span [class.completed]="todo.completed">
+        {{ todo.completed ? 'Completed' : 'Pending' }}
+      </span>
+    </p>
+  </div>
+
+  <a routerLink="/" class="back-link">← Back to List</a>
+  } @else {
+  <div class="not-found">
+    <p>Todo not found.</p>
+    <a routerLink="/" class="back-link" (click)="backToList()">← Back to List</a>
+  </div>
+  }
+</div>

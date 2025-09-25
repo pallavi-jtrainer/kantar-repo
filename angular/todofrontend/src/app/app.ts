@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ListTodos } from './list-todos/list-todos';
+// import { ListTodos } from './components/list-todos/list-todos';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ListTodos],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   // template: `<div>{{title}}</div>`,
   styleUrl: './app.css'

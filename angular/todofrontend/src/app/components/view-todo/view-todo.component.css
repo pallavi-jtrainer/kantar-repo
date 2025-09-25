@@ -1,0 +1,52 @@
+.todo-detail {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.todo-detail h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.completed {
+  color: green;
+  font-weight: bold;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.not-found {
+  text-align: center;
+  margin-top: 2rem;
+  color: #777;
+}

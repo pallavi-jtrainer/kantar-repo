@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewTodo } from './view-todo';
+import { ViewTodo } from './view-todo.component';
 
 describe('ViewTodo', () => {
   let component: ViewTodo;
@@ -10,7 +10,7 @@ describe('ViewTodo', () => {
     await TestBed.configureTestingModule({
       imports: [ViewTodo]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ViewTodo);
     component = fixture.componentInstance;

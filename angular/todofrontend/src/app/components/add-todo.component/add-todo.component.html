@@ -1,0 +1,21 @@
+<div class="card">
+
+  <h2>Add New Todo</h2>
+  <form #todoForm="ngForm">
+    <div class="form-group">
+      <label for="userId">User ID:</label>
+      <input type="number" id="userId" name="userId" [(ngModel)]="userId" />
+    </div>
+
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" ngModel required />
+    </div>
+
+    <button type="button" [disabled]="!todoForm.valid" (click)="addTodo()">Add Todo</button>
+  </form>
+
+  <div>
+    <button (click)="backToList()">Back to List</button>
+  </div>
+</div>
