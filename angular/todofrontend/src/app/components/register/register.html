@@ -1,0 +1,63 @@
+<div class="card">
+  <h2>User Registration</h2>
+  <form *ngIf="registerForm" [formGroup]="registerForm" (ngSubmit)="register()">
+
+    <!-- Name -->
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input id="name" type="text" formControlName="name" placeholder="Enter Full Name" />
+      <div class="error" *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.invalid">
+        Full name is required (min 5 characters)
+      </div>
+    </div>
+
+    <!-- UserName -->
+    <div class="form-group">
+      <label for="username">User Name</label>
+      <input id="username" type="text" formControlName="username" placeholder="Enter Username" />
+      <div class="error" *ngIf="registerForm.get('username')?.touched && registerForm.get('username')?.invalid">
+        Username is required (min 8 characters)
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" placeholder="Enter Email" />
+      <div class="error" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.invalid">
+        Enter a valid email
+      </div>
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input id="password" type="password" formControlName="password" placeholder="Enter Password" />
+      <!-- @if (registerForm.get('password')?.touched && registerForm.get('password')?.invalid) {
+      <div class="error">
+        Password must be at least 8 characters
+      </div>
+      } -->
+      <div class="error" *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.invalid">
+        Password must be at least 8 characters
+      </div>
+    </div>
+
+    <!-- Confirm Password -->
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input id="confirmPassword" type="password" formControlName="confirmPassword" placeholder="Confirm Password" />
+      <!-- @if (registerForm.hasError('mismatch') && registerForm.get('confirmPassword')?.touched) {
+      <div class="error">
+        Passwords do not match
+      </div>
+      } -->
+      <div class="error" *ngIf="registerForm.hasError('mismatch') && registerForm.get('confirmPassword')?.touched">
+        Passwords do not match
+      </div>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" [disabled]="registerForm.invalid">Register</button>
+  </form>
+</div>
