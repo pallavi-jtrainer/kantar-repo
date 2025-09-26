@@ -14,16 +14,16 @@ export class ListTodos {
 
   todos: Todo[] = [];
 
-  id: number = 0;
+  id: any = 0;
   constructor(private todoService: TodoService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.id = Number(this.route.snapshot.params['id']);
-    this.loadTodos(this.id);
+    this.loadTodos();
   }
 
-  loadTodos(id: number) {
-    if (id === 0) {
+  loadTodos() {
+    if (this.id === 0) {
       this.todoService.listAllTodos().subscribe(
         {
           next: (data: any) => {
@@ -35,7 +35,7 @@ export class ListTodos {
           }
         });
     } else {
-      this.todoService.listTodosForUser(id)
+      this.todoService.listTodosForUser(this.id)
         .subscribe({
           next: (data) => {
             this.todos = data;

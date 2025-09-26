@@ -27,16 +27,21 @@ export class ViewTodo {
   private todoService = inject(TodoService);
   private router = inject(Router);
 
-  todo: Todo | null | undefined;
+  todo: Todo = {
+    userId: 0,
+    title: '',
+    completed: false
+  };
   //Reactive computed property
   // todo = computed(() => this.todoService.selectedTodo());
 
+  id: any;
   ngOnInit() {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.loadTodo(id);
+    this.id = Number(this.route.snapshot.paramMap.get('id'));
+    this.loadTodo();
   }
 
-  loadTodo(id: number) {
+  loadTodo() {
     /**
      * using signal approach
      */
@@ -55,7 +60,7 @@ export class ViewTodo {
     /**
      * using observable approach
      */
-    this.todoService.getTodo(id).subscribe(
+    this.todoService.getTodo(this.id).subscribe(
       {
         next: (data: any) => {
           this.todo = data;
