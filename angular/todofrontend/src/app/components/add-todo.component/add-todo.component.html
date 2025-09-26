@@ -4,7 +4,7 @@
   <form #todoForm="ngForm">
     <div class="form-group">
       <label for="userId">User Id:</label>
-      <input type="number" id="userId" name="userId" [(ngModel)]="userId" />
+      <input type="number" id="userId" name="userId" [value]="userId" disabled />
     </div>
 
     <div class="form-group">

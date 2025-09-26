@@ -11,6 +11,12 @@ export class AuthService {
     if (username === 'admin' && password === 'password') {
       this.loggedIn.set(true);
       return true;
+    } else {
+      let dummy = localStorage.getItem("logged");
+      if (dummy) {
+        this.loggedIn.set(true);
+        return true;
+      }
     }
     return false;
   }

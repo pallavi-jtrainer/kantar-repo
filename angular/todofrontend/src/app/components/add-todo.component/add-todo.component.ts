@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TodoService } from '../../services/todoservice';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Todo } from '../../models/Todo';
 
 @Component({
@@ -13,16 +13,16 @@ import { Todo } from '../../models/Todo';
 })
 export class AddTodoComponent {
 
-  constructor(private todoService: TodoService, private router: Router) { }
+  constructor(private todoService: TodoService, private router: Router, private route: ActivatedRoute) { }
 
   todo?: Todo;
   id = 0;
   userId = 0;
   title = '';
 
-  // ngOnInit() {
-  //   this.addTodo();
-  // }
+  ngOnInit() {
+    this.userId = this.route.snapshot.params['id'];
+  }
 
   addTodo() {
     this.todo = {
@@ -43,6 +43,6 @@ export class AddTodoComponent {
   }
 
   backToList() {
-    this.router.navigate(['/list']);
+    this.router.navigate(['/list/' + this.userId]);
   }
 }

@@ -3,6 +3,7 @@ import { Component, inject } from '@angular/core';
 import { AbstractControl, Form, FormBuilder, FormControl, FormGroup, NonNullableFormBuilder, ReactiveFormsModule, ValidationErrors, Validators } from '@angular/forms';
 import { UserService } from '../../services/user.service';
 import { User } from '../../models/User';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -13,8 +14,9 @@ import { User } from '../../models/User';
 export class Register {
   private userService = inject(UserService);
   private fb = inject(NonNullableFormBuilder);
+  private router = inject(Router);
+
   user: User = {
-    id: 0,
     name: '',
     username: '',
     email: '',
@@ -58,7 +60,6 @@ export class Register {
       // this.user.password = this.registerForm.value.password ?? '';
       const formValue = this.registerForm.getRawValue();
       this.user = {
-        id: 1,
         name: formValue.name,
         username: formValue.username,
         email: formValue.email,
@@ -80,6 +81,8 @@ export class Register {
           console.error('Error registering user:', error);
         }
       });
+
+      this.router.navigate(['/login'])
     }
   }
 }

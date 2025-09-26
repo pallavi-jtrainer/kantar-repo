@@ -3,6 +3,8 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
+import { UserService } from '../../services/user.service';
+import { User } from '../../models/User';
 
 @Component({
   selector: 'app-login',
@@ -16,6 +18,9 @@ export class Login {
 
   router = inject(Router);
   authService = inject(AuthService);
+  userService = inject(UserService);
+
+  user?: User;
 
   onLogin() {
     // this.authService.login(this.username, this.password);
@@ -31,11 +36,34 @@ export class Login {
       console.log("auth service info: " + info);
 
       if (info) {
-        this.router.navigate(['list']);
+        this.router.navigate(['list/' + 0]);
       }
     } else {
-      alert('Invalid credentials');
+      this.userService.getUserByUsername(this.username)
+        .subscribe({
+          next: (data) => {
+            this.user = data;
+            console.log(this.user.name);
+
+            if (!this.user || this.user !== undefined) {
+              if (this.password === this.user.password) {
+                localStorage.setItem("logged", "true");
+                let info = this.authService.login(this.username, this.password);
+                if (info) {
+                  this.router.navigate(['list/' + this.user.id]);
+                }
+              }
+            }
+          }, error: (err) => {
+            console.log("Error: " + err);
+          }
+        })
+
+      // alert('Invalid credentials');
     }
   }
 
+  forRegistration() {
+    this.router.navigate(['/register']);
+  }
 }

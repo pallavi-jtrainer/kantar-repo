@@ -1,9 +1,10 @@
 .login-container {
   background-color: #fff;
-  padding: 20px;
+  padding: 49px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 308px;
+  margin-left: 15%;
 }
 
 h2 {
@@ -47,4 +48,24 @@ h2 {
 
 .btn:hover {
   background-color: #0056b3;
+}
+
+.btn-new {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: rgb(9, 9, 9);
+  background-color: #d6e2ed;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 8%;
+  margin-left: 18%;
+}
+
+.btn-new:hover {
+  background-color: #e43905;
+  color: white;
 }

@@ -49,7 +49,7 @@ input:focus {
 button {
   width: 100%;
   padding: 12px;
-  background-color: #4caf50;
+  background-color: #09b2d7;
   border: none;
   border-radius: 8px;
   color: #fff;
@@ -59,10 +59,10 @@ button {
 }
 
 button:disabled {
-  background-color: #a5d6a7;
+  background-color: #8c928c;
   cursor: not-allowed;
 }
 
 button:hover:not(:disabled) {
-  background-color: #43a047;
+  background-color: #09b2d7;
 }

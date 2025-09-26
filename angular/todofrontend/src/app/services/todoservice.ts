@@ -30,6 +30,10 @@ export class TodoService {
     return this.http.get<Todo[]>(`${this.baseUrl}/todos`);
   }
 
+  listTodosForUser(id: number): Observable<Todo[]> {
+    return this.http.get<Todo[]>(`${this.baseUrl}/todos/user/${id}`);
+  }
+
   // async getTodo(id: number) {
   //   return this.http.get(`${this.baseUrl}/todos/${id}`);
   // }

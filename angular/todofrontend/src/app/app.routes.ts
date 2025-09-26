@@ -10,8 +10,9 @@ export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: Login },
   { path: 'register', component: Register },
-  { path: 'list', component: ListTodos, canActivate: [AuthGuard] },
-  { path: "view/:id", component: ViewTodo },
-  { path: 'add', component: AddTodoComponent }
+  { path: 'list/:id', component: ListTodos, canActivate: [AuthGuard] },
+  { path: 'view/:id', component: ViewTodo },
+  { path: 'add/:id', component: AddTodoComponent },
+  // { path: 'user-list/:id', component: ListTodos }
 
 ];
