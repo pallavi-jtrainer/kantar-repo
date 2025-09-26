@@ -52,7 +52,5 @@ describe('Register', () => {
     component.register();
     expect(mockService.registerUser).toHaveBeenCalledWith(component.user);
     expect(component.user.name).toEqual('something');
-
-
   });
 });

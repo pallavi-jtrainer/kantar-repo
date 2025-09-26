@@ -26,7 +26,7 @@ export class AddTodoComponent {
 
   addTodo() {
     this.todo = {
-      id: this.id,
+      // id: this.id,
       userId: this.userId,
       title: this.title,
       completed: false
