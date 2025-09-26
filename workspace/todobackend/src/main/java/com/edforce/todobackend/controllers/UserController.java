@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.edforce.todobackend.dto.UserDto;
 import com.edforce.todobackend.entity.User;
 import com.edforce.todobackend.services.UserService;
 
@@ -27,7 +28,7 @@ public class UserController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<User> registerUser(@RequestBody User u) {
+	public ResponseEntity<User> registerUser(@RequestBody UserDto u) {
 		User user = service.registerUser(u);
 		return ResponseEntity.created(URI.create("/api/users/" + user.getUsername())).body(user);
 	}

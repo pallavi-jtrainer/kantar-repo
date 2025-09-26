@@ -4,20 +4,25 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
+import com.edforce.todobackend.dto.UserDto;
 import com.edforce.todobackend.entity.User;
+import com.edforce.todobackend.mapper.CustomMapper;
 import com.edforce.todobackend.repository.UserRepository;
 
 @Service
 public class UserService {
 
 	private final UserRepository repo;
+	private final CustomMapper mapper;
 	
-	public UserService(UserRepository repo) {
+	public UserService(UserRepository repo, CustomMapper mapper) {
 		this.repo = repo;
+		this.mapper = mapper;
 	}
 	
-	public User registerUser(User u) {
-		return repo.save(u);
+	public User registerUser(UserDto u) {
+		User user = mapper.userDtoToUser(u);
+		return repo.save(user);
 	}
 	
 	public Optional<User> retrieveUserDetailsByEmail(String email) {

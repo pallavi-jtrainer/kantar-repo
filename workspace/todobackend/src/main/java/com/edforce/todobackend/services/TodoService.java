@@ -5,16 +5,20 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
+import com.edforce.todobackend.dto.TodoDto;
 import com.edforce.todobackend.entity.Todo;
+import com.edforce.todobackend.mapper.CustomMapper;
 import com.edforce.todobackend.repository.TodoRepository;
 
 @Service
 public class TodoService {
 
 	private final TodoRepository repo;
+	private final CustomMapper mapper;
 
-	public TodoService(TodoRepository repo) {
+	public TodoService(TodoRepository repo, CustomMapper mapper) {
 		this.repo = repo;
+		this.mapper = mapper;
 	}
 	
 	public List<Todo> listAllTodos() {
@@ -29,7 +33,8 @@ public class TodoService {
 		return repo.findAllByUserIdAndCompleted(id, status);
 	}
 	
-	public Todo addNewTodo(Todo t) {
+	public Todo addNewTodo(TodoDto todo) {
+		Todo t = mapper.todoDtoToTodo(todo);
 		return repo.save(t);
 	}
 	

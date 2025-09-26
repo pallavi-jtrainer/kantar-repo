@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.edforce.todobackend.dto.TodoDto;
 import com.edforce.todobackend.entity.Todo;
 import com.edforce.todobackend.services.TodoService;
 
@@ -39,7 +40,7 @@ public class TodoController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<Todo> createTodo(@RequestBody Todo todo) {
+	public ResponseEntity<Todo> createTodo(@RequestBody TodoDto todo) {
 		Todo t = service.addNewTodo(todo);
 		return ResponseEntity.created(URI.create("/api/todos/" + t.getId())).body(t);
 	}
