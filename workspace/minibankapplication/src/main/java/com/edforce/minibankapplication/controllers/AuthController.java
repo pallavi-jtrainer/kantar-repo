@@ -13,7 +13,7 @@ import com.edforce.minibankapplication.dto.AuthResponse;
 import com.edforce.minibankapplication.security.JwtUtil;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/auth")
 public class AuthController {
 
 	private final JwtUtil jwtUtil;
